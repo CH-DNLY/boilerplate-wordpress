@@ -5,7 +5,7 @@ import ReactDOM from "react-dom/client"
 const divsToUpdate = document.querySelectorAll(".boilerplate-update-me")
 
 divsToUpdate.forEach(div => {
-  const data = JSON.parse(div.querySelector("pre").innerText)
+  const data = JSON.parse(div.querySelector("pre").innerText) //grabs php data
   const root = ReactDOM.createRoot(div)
   root.render(<OurComponent {...data} />)
   div.classList.remove("boilerplate-update-me")
