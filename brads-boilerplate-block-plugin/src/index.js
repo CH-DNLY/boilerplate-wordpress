@@ -6,7 +6,7 @@ import metadata from "./block.json"
 
 registerBlockType(metadata.name, { edit: EditComponent })
 
-function EditComponent(props) {
+function EditComponent(props) { //props is glboal value, updates value in local storage
   function updateSkyColor(e) {
     props.setAttributes({ skyColor: e.target.value })
   }
