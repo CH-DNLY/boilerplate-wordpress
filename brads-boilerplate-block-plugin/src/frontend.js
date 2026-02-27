@@ -18,7 +18,7 @@ function OurComponent(props) {
   return (
     <div className="boilerplate-frontend">
       <p>
-        <button onClick={() => setShowSkyColor(prev => !prev)}>Toggle view sky color</button>
+        <button onClick={() => setShowSkyColor(prev => !prev)}>Toggle view sky color</button> /* passes inner function as argument to function called on button press*/
         {showSkyColor && <span>{props.skyColor}</span>}
       </p>
       <p>
